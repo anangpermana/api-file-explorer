@@ -1,0 +1,6 @@
+#create migration
+npx sequelize-cli model:generate --name Folder --attributes name:string,parent_id:bigint
+npx sequelize-cli model:generate --name File --attributes name:string,type:string,size:bigint,path:text,folder_id:bigint
+
+#run migration
+npx sequelize-cli db:migrate
