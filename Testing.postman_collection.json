@@ -1,23 +1,23 @@
 {
 	"info": {
-		"_postman_id": "7643e7e4-a86b-4b15-872a-0f51d6bd7800",
+		"_postman_id": "41a528ee-5812-44ad-8b57-bf48a01a8183",
 		"name": "Testing",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "29860734"
+		"_exporter_id": "3817998"
 	},
 	"item": [
 		{
-			"name": "New Request",
+			"name": "Get Folder",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/folders/1",
+					"raw": "http://localhost:5000/api/folders/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"api",
 						"folders",
@@ -28,7 +28,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request Copy",
+			"name": "Add Folder",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -57,7 +57,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request Copy 2",
+			"name": "Add Files",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -71,12 +71,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/files",
+					"raw": "http://localhost:5000/api/files",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "5000",
 					"path": [
 						"api",
 						"files"
