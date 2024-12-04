@@ -5,7 +5,7 @@ const fileExplorerRoutes = require('./routes/fileExplorerRoutes');
 const cors = require('cors');
 const app = express();
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://your-domain.com'],
+  origin: [process.env.CORS_ORIGIN],
 }));
 app.use(bodyParser.json());
 app.use('/api', fileExplorerRoutes);
